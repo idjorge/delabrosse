@@ -1,0 +1,532 @@
+/* ------------------------- */
+/* Estilos Generales */
+/* 
+font-family: 'Racing Sans One', cursive;
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.texto-naranja {
+  font-weight: 400;
+  color: #e0a80d;
+  font-size: larger;
+}
+
+.texto-blanco {
+  font-weight: 700;
+  color: #fff;
+  font-size: larger;
+}
+
+.texto-negro {
+  color: #000;
+}
+
+/* ------------------------- */
+/* Clases de Fullpage.js */
+/* ------------------------- */
+#fp-nav ul li a span {
+  background: #e0a80d;
+}
+
+#fp-nav ul li .fp-tooltip {
+  color: #e0a80d;
+}
+
+/* ------------------------- */
+/* Menu de Navegacion */
+/* ------------------------- */
+.nav {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 70;
+  width: 100%;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.nav li,
+.nav a {
+  display: inline-block;
+  margin: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 19px;
+  color: #c2c2c2;
+  transition: 0.5s ease;
+  text-shadow: -1px 1px 1px rgb(0 0 0 / 100%);
+}
+
+.nav li.active {
+  border-bottom: 2px solid #e0a80d;
+}
+
+.nav .marca {
+  text-decoration: none;
+}
+
+.nav .marca:hover {
+  color: forestgreen;
+}
+
+.menu {
+  margin-bottom: 0%;
+}
+
+.menu li a {
+  transition: 0.5s ease;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.menu li.active a,
+.menu li:hover a {
+  color: #e0a80d;
+}
+
+/* ------------------------- */
+/* Header */
+/* ------------------------- */
+.header {
+  background: url("../media/vance-osterhout-38OOhn_R6aA-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header .contenedor-titulo {
+  text-align: center;
+  position: relative;
+  z-index: 99;
+  font-family: "Racing Sans One", cursive;
+  text-shadow: -4px 4px 4px rgb(0 0 0 / 100%);
+}
+
+.header .titulo {
+  font-size: 100px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.slogan {
+  font-size: 25px;
+  color: #fff;
+  text-shadow: -2px 2px 2px rgb(0 0 0 / 100%);
+}
+
+.header .contenedor-icono {
+  position: relative;
+  z-index: 99;
+  left: 50%;
+  right: 50%;
+  top: 20%;
+  transform: translate(-50%, auto);
+  font-size: 40px;
+  font-weight: 100;
+  animation: bajar-subir 1s ease infinite;
+  text-shadow: -4px 4px 4px rgb(0 0 0 / 100%);
+}
+
+.bg-video {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background: #000;
+  background-position: center;
+  background-size: contain;
+  object-fit: cover;
+}
+
+/* ------------------------- */
+/* Animaciones */
+/* ------------------------- */
+@keyframes bajar-subir {
+  0% {
+    transform: translateY(20px);
+  }
+  25% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+/* ------------------------- */
+/* Productos */
+/* ------------------------- */
+.productos article {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.productos article:nth-child(2) {
+  background-image: url("../media/team.jpg");
+}
+
+.productos article:nth-child(3) {
+  background-image: url("../media/workshop.jpg");
+}
+
+.productos .informacion-producto {
+  margin: 0 30px;
+}
+
+.productos .informacion-producto::before {
+  content: "";
+  height: 50px;
+  width: 2px;
+  display: inline-block;
+  background: #e0a80d;
+  position: absolute;
+  top: 50%;
+  margin: -10px;
+}
+
+.productos .modelo {
+  font-size: 45px;
+}
+
+.productos .descripcion {
+  font-size: 22px;
+}
+
+.productos .precio {
+  font-size: 25px;
+}
+
+.productos .precio::before {
+  content: "!";
+  display: inline-block;
+}
+
+/* --=====================================
+PRODUCTOS SECCION 1
+======================================--*/
+.content {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.whatwedo {
+  margin: auto;
+}
+
+.whatwedo .cursiva {
+  font-family: "Kaushan Script", cursive !important;
+  font-size: 60px;
+  color: #fff;
+  text-align: left;
+}
+
+.whatwedo {
+  color: white;
+}
+
+.introduction {
+  line-height: 1.5;
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  color: rgb(157, 143, 143);
+  font-family: "Lato", sans-serif !important;
+}
+
+.whatwedo .card-body {
+  padding: 0 0 0 0px;
+  margin: 0 0 0 30px;
+}
+
+.whatwedo .card-body .card-text {
+  margin: 0;
+}
+
+.buttonresume {
+  font-size: 13px;
+  font-weight: 800;
+  color: whitesmoke;
+  border-radius: 0px !important;
+  padding: 40px;
+  text-shadow: -1px 0px 0px rgb(0 0 0 / 100%);
+}
+
+/*=============================================
+PRODUCTOS SECCION 1
+=============================================*/
+
+/* ------------------------- */
+/* Clases de fullpage.js - Flechas de Slide */
+/* ------------------------- */
+.fp-controlArrow.fp-next,
+.fp-controlArrow.fp-prev {
+  top: 95%;
+}
+
+.fp-controlArrow.fp-prev {
+  left: 80%;
+  border-width: 20px 20px 20px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+.fp-controlArrow.fp-next {
+  right: 50px;
+  border-width: 20px 0 20px 20px;
+  border-color: transparent transparent transparent #fff;
+}
+
+/* ------------------------- */
+/* Second Section */
+/* ------------------------- */
+
+/* ------------------------- */
+/* Footer */
+/* ------------------------- */
+.footer {
+  background-image: url("../media/jimmy-nilsson-masth-eMvQoeOVTjc-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer .texto-naranja {
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.footer h2 {
+  opacity: 0;
+  font-family: "Oswald", sans-serif;
+  transition: 1s ease all;
+  color: #c2c2c2;
+  font-weight: 800;
+  text-shadow: -4px 4px 4px rgb(0 0 0 / 100%);
+}
+
+.footer .redes-sociales {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-size: 50px;
+}
+
+.footer .redes-sociales a {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background: #fff;
+  color: #30313a;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  margin: 0 20px;
+}
+
+.contact {
+  font-size: 25px;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.moreinfo {
+  font-size: 50px;
+  color: #c2c2c2;
+}
+
+.location {
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  color: forestgreen;
+  display: flex;
+  justify-content: center;
+}
+
+.footer .facebook i {
+  color: #3b5998;
+}
+
+.footer .instagram i {
+  color: #c13584;
+}
+
+.footer .facebook:hover {
+  background: #3b5998;
+}
+
+.footer .instagram:hover {
+  background: #c13584;
+}
+
+.footer .facebook:hover i {
+  color: #fff;
+}
+
+.footer .instagram:hover i {
+  color: #fff;
+}
+
+/* ------------------------- */
+/* Mediaqueries */
+/* ------------------------- */
+@media screen and (max-width: 768px) {
+  .menu li a,
+  .menu li.active a {
+    font-size: 16px;
+  }
+  .modelo {
+    font-size: 40px;
+  }
+  .precio {
+    font-size: 23px;
+  }
+  .footer h2 {
+    font-size: 15px;
+  }
+  .footer .redes-sociales {
+    font-size: 30px;
+  }
+  .footer .redes-sociales a {
+    width: 70px;
+    height: 70px;
+  }
+
+  .footer .texto-naranja {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header .titulo {
+    font-size: 35px;
+  }
+
+  .whatwedo .card-body {
+    margin-top: 16px;
+  }
+
+  .informacion-producto {
+    position: absolute;
+    top: 70%;
+  }
+
+  .fp-controlArrow.fp-next {
+    left: 100px;
+  }
+
+  .fp-controlArrow.fp-prev {
+    left: 25px;
+  }
+
+  .header .contenedor-icono {
+    top: 33% !important;
+    left: 45%;
+    right: 55%;
+    transform: translate(-55%, auto);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav {
+    display: block;
+    text-align: center;
+  }
+
+  .nav a {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav .marca {
+    margin-top: 5px;
+  }
+
+  .menu li a,
+  .menu li.active a {
+    font-size: 14px;
+    padding: 10px auto;
+  }
+
+  .titulo {
+    font-size: 45px;
+  }
+
+  .productos .modelo {
+    font-size: 30px;
+  }
+
+  .footer .texto-naranja {
+    font-size: 25px;
+  }
+
+  .footer .redes-sociales a {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer .redes-sociales a i {
+    font-size: 24px;
+  }
+
+  .moreinfo {
+    width: 35%;
+  }
+  .moreinfo a {
+    font-size: 13px;
+    padding: 3px;
+  }
+  .location {
+    font-size: 13px;
+  }
+  .whatwedo .cursiva {
+    font-size: 40px;
+  }
+
+  .introduction {
+    font-size: 18px;
+    font-weight: 300;
+  }
+}
